@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MacroEconomicsResearch</string>
+    <string name="welcome">Welcome to Macroeconomics Food Security App</string>
+    <string name="title">Macroeconomic Research Food Security Time Series Dashboard</string>
+    <string name="logo">Logo</string>
+    <string name="macroeconomics_Resarcher">Macroeconomic Researcher</string>
+    <string name="government_0fficial">Government Official</string>
+    <string name="Macroeoconomic_usd">Macroeoconomic (USD)</string>
+    <string name="gdp">GDP (USD)</string>
+    <string name="fdi_inflow">FDI Inflows(USD)</string>
+    <string name="fdi_outflow">FDI Outflows(USD)</string>
+    <string name="import_export">Import / Export</string>
+    <string name="show">Show</string>
+    <string name="macroeconomic">Macroeconomic</string>
+    <string name="start_value">Start Value :</string>
+    <string name="expitry_date">End Year :</string>
+    <string name="contribution_gdp">Contribution To GDP</string>
+    <string name="Credit">Credit</string>
+    <string name="Fertilizers">Fertilizers</string>
+    <string name="Fertilizer_Production">Fertilizer Production</string>
+    <string name="Reserves">Annotations</string>
+    <string name="GNI">Annotations</string>
+    <string name="Total_Debt">Annotations</string>
+    <string name="GNI_Current">GNI (current US$)</string>
+    <string name="annotations">Annotations</string>
+    <string name="apply">Apply</string>
+</resources>
