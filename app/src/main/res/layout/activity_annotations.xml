@@ -143,7 +143,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/outflow" />
+        app:layout_constraintTop_toBottomOf="@+id/outflow"
+        android:onClick="onAnnotationBtnClick"/>
 
     <Button
         android:id="@+id/apply_btn"

@@ -325,4 +325,30 @@ public class AnnotationsActivity extends AppCompatActivity {
 
         }
     }
+
+    public void onAnnotationBtnClick(View view) {
+        AlertDialog.Builder annotationBuilder = new AlertDialog.Builder(this)
+                .setTitle("Graph Annotations");
+        //.setMessage("This is some dialog")
+
+        // Set up the input
+        final EditText input = new EditText(this);
+        // Specify the type of input expected; this, for example, sets the input as a password, and will mask the text
+        input.setInputType(InputType.TYPE_CLASS_TEXT);
+        annotationBuilder.setView(input);
+
+        annotationBuilder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        userAnnotation = input.getText().toString();
+
+                        DataController dataController=new DataController(getBaseContext());
+                        dataController.open();
+                        long retValue= dataController.insert(userAnnotation);
+                        dataController.close();
+                        // DBWriter writer = new DBWriter();
+                        //writer.writeText(userAnnotation);
+                    }
+                })
+                .show();
+    }
 }

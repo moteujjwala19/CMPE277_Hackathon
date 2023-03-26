@@ -73,6 +73,26 @@ public class ShowActvity extends AppCompatActivity {
         });
     }
 
+    public void showAnnot(View v){
+
+        DataController dataController=new DataController(getBaseContext());
+        dataController.open();
+        Cursor c  = dataController.retrieve();
+        String msg = "";
+        while(c.moveToNext()){
+            msg+=" \n"+c.getString(0);
+        }
+        System.out.println("annotation:"+msg);
+
+        dataController.close();
+        AlertDialog.Builder annotationBuilder = new AlertDialog.Builder(this)
+                .setTitle("Graph Annotations")
+                .setMessage(msg);
+//        annotationBuilder.show();
+        annotationBuilder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) { } }) .show();
+    }
+
     private void openAnnotationsActivity() {
         ArrayList<String> checkedStrings=new ArrayList<>();
         if(checkBox_1.isChecked()){
